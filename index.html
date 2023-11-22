@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Crafted4u.ae</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .masthead {
+            background: url('path-to-your-landing-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .feature-item {
+            margin-bottom: 1rem;
+        }
+        .feature-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .call-to-action {
+            background-color: #00796b;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Crafted4u.ae</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="container">
+            <h1>Crafted4u.ae</h1>
+            <p>Curated Workshops, Just For You!</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="path-to-your-image1.jpg" alt="Description of Image 1">
+            </div>
+            <div class="col-md-6">
+                <h2>Discover Your Passion</h2>
+                <p>Vibrant Workshops - Experience the colors and energy of unique workshops.</p>
+                <!-- ... Other sub-sections ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Picks -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Featured Picks</h2>
+                <ul class="list-unstyled">
+                    <li>Decorate cupcakes with Mangolia Bakery - Unleash your inner artist as you decorate your very own cupcakes.</li>
+                    <!-- ... More items ... -->
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="path-to-your-image2.jpg" alt="Description of Image 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Today Section -->
+    <section class="call-to-action mt-4">
+        <h2>Join Today</h2>
+        <p>Embark on the journey to discover curated workshops, just for you! Explore, create, and make connections with Crafts4u – the ultimate workshop aggregator.</p>
+        <a href="#" class="btn btn-light">Register Now</a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="faq-question">How do I sign up?</div>
+                <div class="faq-answer">Click on the Register Now button and follow the simple steps to join Crafted4u.</div>
+                <!-- ... More questions ... -->
+            </div>
+            <div class="col-md-6">
+                <img src="path-to-your-image3.jpg" alt="Description of Image 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3">
+        © 2023 Crafted4u, All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom Script for FAQ toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('.faq-question');
+            questions.forEach(function (question) {
+                question.addEventListener('click', function () {
+                    this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
