@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.partner {
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.partner-logo {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.partner:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workshops</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Workshops</h1>
+        <div id="workshops"></div>
+
+        <!-- Handlebars Template for workshops -->
+<script id="workshop-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="workshop">
+        <img class="workshop-logo" src="{{LogoLink}}" alt="{{ActivityName}}">
+        <h2>{{ActivityName}}</h2>
+        <p><strong>{{OneLiner}}</strong></p>
+        <p>{{ShortBio}}</p>
+        <a href="{{Contact}}" target="_blank">Contact</a>
+    </div>
+    {{/each}}
+</script>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
